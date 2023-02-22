@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html {
+  margin: 0;
+}
+body {
+  margin: 0;
+  background-color: #afff;  
+}
+.container {
+  width: 945px;
+  margin: 0 auto;
+  position: relative;
+}
+/********************** Effect 1 *************************/
+.effect1 img{
+ width: 100%;
+ max-width: 300px;
+}
+  .effect1 {
+ position: relative;
+ float: left;
+ display: inline-block;
+ margin-right: 1.5%;
+}
+.effect1:before {
+  content: '';
+  left: 50%;
+  position: absolute;
+  margin-left: -215px;
+  width: 100%;
+  height: 99%;
+  transition: 0.4s EASE ALL;
+  }
+.effect1:hover:before {
+  content: '';
+  background: #000;  
+  transform: scale(1);
+  opacity: 0.6;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  left: 50%;
+  position: absolute;
+  margin-left: -150px;
+  background-image: url(http://a.dryicons.com/images/icon_sets/luna_grey_icons/png/128x128/zoom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+ }
+/********************** Effect 2 *************************/
+.effect2 img{
+ width: 100%;
+ max-width: 300px;
+}
+.effect2  {
+   position: relative;
+   display: inline-block;
+   margin-right: 1%;
+}
+.effect2:before {
+  content: '';
+  left: 50%;
+  position: absolute;
+  margin-bottom: -215px;
+  width: 100%;
+  height: 99%;
+  transition: 0.4s EASE ALL;
+  }
+.effect2:hover:before {
+  content: '';
+  background: #000;  
+  transform: scale(1);
+  opacity: 0.6;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  left: 50%;
+  position: absolute;
+  margin-left: -150px;
+  background-image: url(http://a.dryicons.com/images/icon_sets/luna_grey_icons/png/128x128/zoom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+ }
+/********************** Effect 3 *************************/
+.effect3 img{
+   width: 100%;
+   max-width: 300px;
+}
+.effect3 {
+   position: relative;
+   display: inline-block;
+}
+.effect3:before {
+   content: '';
+   left: 50%;
+   left: 50%;
+   position: absolute;
+   margin-left: -150px;
+   transform: scale(0.3);
+   width: 100%;
+   height: 99%;
+   background-repeat: no-repeat;
+   background-position: center;
+   transition: 0.4s EASE ALL;
+  }
+.effect3:hover:before {
+   content: '';
+   background: #000;  
+   transform: scale(1);
+   opacity: 0.6;
+   text-align: center;
+   color: #fff;
+   font-size: 25px;
+   margin-top: 0;
+   background-image: url(http://a.dryicons.com/images/icon_sets/luna_grey_icons/png/128x128/zoom.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+ }
+/********************** Effect 4 *************************/
+.effect4 {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 1.5%;
+  position: relative;
+  cursor: pointer;
+}
+.effect4 img {
+  max-width: 100%
+}
+.effect4 a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 40px;
+  height: 0px;
+  position: absolute;
+  transition: 0.5s ease all;
+  visibility: hidden;
+  opacity: 0;
+  top:0;
+} 
+.effect4:hover a {
+  background-color: rgba(200,10,10,0.4);
+  visibility: visible;
+  height: 20%;
+  padding: 40% 0; 
+  opacity: 1;
+}
+/********************** Effect 5 *************************/
+.effect5 {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 1.5%;
+  position: relative;
+  cursor: pointer;
+}
+.effect5 img {
+  max-width: 100%
+}
+.effect5 a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 40px;
+  height: 0px;
+  position: absolute;
+  transition: 0.5s ease all;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 3px;
+} 
+.effect5:hover a {
+  background-color: rgba(100,0,120,0.4);
+  visibility: visible;
+  height: 16%;
+  padding: 42% 0; 
+  opacity: 1;
+}
+/********************** Effect 6 *************************/
+.effect6 {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 1.5%;
+  position: relative;
+  cursor: pointer;
+}
+.effect6 img {
+  max-width: 100%
+}
+.effect6 a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 40px;
+  height: 0px;
+  position: absolute;
+  transition: 0.5s ease all;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 150px;
+  transform: scale(0.3)
+} 
+.effect6:hover a {
+  background-color: rgba(20,20,100,0.4);
+  visibility: visible;
+  height: 40%;
+  padding: 30% 0; 
+  opacity: 1;
+  bottom: 3px;
+  transform: scale(1);
+}
+/********************** Effect 7 *************************/
+.effect7 {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 1.5%;
+  position: relative;
+  cursor: pointer;
+}
+.effect7 img {
+  max-width: 100%
+}
+.effect7 a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 40px;
+  height: 0px;
+  position: absolute;
+  transition: 0.5s ease all;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 150px;
+  transform: scale(0.3);
+  transform: rotate(-180deg);
+} 
+.effect7:hover a {
+  background-color: rgba(190,120,130,1);
+  visibility: visible;
+  height: 20%;
+  padding: 40.1% 0; 
+  opacity: 1;
+  bottom: 3px;
+  transform: scale(1);
+  transform: rotate(0deg);
+  text-decoration: overline underline;
+}
+/********************** Effect 8 *************************/
+.effect8 {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 1.5%;
+  position: relative;
+  cursor: pointer;
+}
+.effect8 img {
+  max-width: 100%
+}
+.effect8 a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 40px;
+  height: 0px;
+  position: absolute;
+  transition: 0.5s ease all;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 150px;
+  transform: scale(0.3);
+  transform: rotate(180deg);
+} 
+.effect8:hover a {
+  background-color: rgba(240,160,140,1);
+  visibility: visible;
+  height: 20%;
+  padding: 40.1% 0; 
+  opacity: 1;
+  bottom: 3px;
+  transform: scale(1);
+  transform: rotate(0deg);
+
+}
+/********************** Effect 9 *************************/
+.effect9 {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 1.5%;
+  position: relative;
+  cursor: pointer;
+}
+.effect9 img {
+  max-width: 100%
+}
+.effect9 a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  height: 0px;
+  position: absolute;
+  left: 0;
+  transition: 0.5s ease all;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 150px;
+  transform: scale(0.3);
+  transform: rotate(-720deg);
+} 
+.effect9:hover a {
+  background-color: rgba(120,160,230,1);
+  visibility: visible;
+  height: 20%;
+  padding: 40.1% 0; 
+  opacity: 1;
+  bottom: 3px;
+  transform: scale(1);
+  transform: rotate(0deg);
+}
+/********************** Effect 10 *************************/
+.effect10 {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 1.5%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.effect10 img {
+  transform: scale(1.5);
+  max-width: 100%;
+  transition: 0.5s ease all;
+}
+.effect10 a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  font-size: 40px;
+  height: 0px;
+  position: absolute;
+  transition: 0.5s ease all;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 150px;
+  transform: scale(0.3);
+} 
+.effect10:hover a {
+  background: rgba(0,0,0,0.2);
+  visibility: visible;
+  height: 20%;
+  padding: 40.1% 0; 
+  opacity: 1;
+  bottom: 3px;
+  transform: scale(1);
+  text-shadow: 
+    -0   -1px 1px #000000,
+     0   -1px 1px #000000,
+    -0    1px 1px #000000,
+     0    1px 1px #000000,
+    -1px -0   1px #000000,
+     1px -0   1px #000000,
+    -1px  0   1px #000000,
+     1px  0   1px #000000,
+    -1px -1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+     1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+     1px  1px 1px #000000;
+}
+.effect10:hover img {
+  transform: scale(1);
+}
+/********************** Effect 11 *************************/
+.effect11 {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 1.5%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.effect11 img {
+  transform: scale(1);
+  max-width: 100%;
+  transition: 0.5s ease all;
+}
+.effect11 a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  height: 0px;
+  position: absolute;
+  transition: 0.5s ease all;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 150px;
+  transform: scale(0.3);
+} 
+.effect11:hover a {
+  background: rgba(0,0,0,0.2);
+  visibility: visible;
+  left: 0;
+  height: 20%;
+  padding: 40.1% 0; 
+  opacity: 1;
+  bottom: 3px;
+  transform: scale(1);
+  text-shadow: 
+    -0   -1px 1px #000000,
+     0   -1px 1px #000000,
+    -0    1px 1px #000000,
+     0    1px 1px #000000,
+    -1px -0   1px #000000,
+     1px -0   1px #000000,
+    -1px  0   1px #000000,
+     1px  0   1px #000000,
+    -1px -1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+     1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+     1px  1px 1px #000000;
+}
+.effect11:hover img {
+  transform: scale(1.5);
+}
+/********************** Effect 12 *************************/
+.effect12 {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 1.5%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.effect12 img {
+  transform: scale(1);
+  max-width: 100%;
+  transition: 0.5s ease all;
+  transform: rotate(-360deg);
+}
+.effect12 a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 40px;
+  height: 0px;
+  position: absolute;
+  transition: 0.5s ease all;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 150px;
+  transform: scale(0.3);
+} 
+.effect12:hover a {
+  background: rgba(0,0,0,0.2);
+  visibility: visible;
+  height: 20%;
+  padding: 40.1% 0; 
+  opacity: 1;
+  bottom: 3px;
+  transform: scale(1);
+  text-shadow: 
+    -0   -1px 1px #000000,
+     0   -1px 1px #000000,
+    -0    1px 1px #000000,
+     0    1px 1px #000000,
+    -1px -0   1px #000000,
+     1px -0   1px #000000,
+    -1px  0   1px #000000,
+     1px  0   1px #000000,
+    -1px -1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+     1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+     1px  1px 1px #000000;
+}
+.effect12:hover img {
+  transform: scale(1.5);
+  transform: rotate(0deg);
+}
+    </style>
+</head>
+<body>
+    
+
+<div class=container>
+    <div class="effect1">
+      <img src="https://d2sexymrhewzz1.cloudfront.net/sites/default/files/styles/small/public/2018-04/London_600x600.jpg">
+    </div>
+    <div class="effect2">
+      <img src="https://pbs.twimg.com/media/CiGFoffXIAEMgdV.jpg">
+    </div>
+      <div class="effect3">
+      <img src="http://blog.camilomunar.com/wp-content/gallery/spain-16/1118g4a0365.jpg">
+      </div>
+    <div class="effect4">
+      <img src="https://media.gettingpersonal.co.uk/109134/images/products/48/8048/fullsize_c.jpg">
+      <a href="#">Emirates</a>
+    </div>
+    <div class="effect5">
+      <img src="https://pbs.twimg.com/media/CFkJ1o3UEAA8FQI.jpg">
+      <a href="#">Parc des Princes</a>
+    </div>
+      <div class="effect6">
+      <img src="http://static.lexpress.fr/medias_10675/w_1000,h_1000,c_fill,g_north/v1447845559/le-stade-santiago-bernabeu-a-madrid-en-2013_5465604.jpg">
+      <a href="#">Santiago Bernabeu</a>
+    </div>
+    <div class="effect7">
+      <img src="http://r-ec.bstatic.com/data/explorer_city/max800/457/4572.jpg">
+      <a href="#">Learn more</a>
+    </div>
+    <div class="effect8">
+      <img src="https://fastly.4sqi.net/img/general/600x600/21381669_c1x9Bxs_mMHPf-3dbjAOUaopYn9632YXgmP9XsIt3l4.jpg">
+      <a href="#">[Learn more]</a>
+    </div>
+      <div class="effect9">
+      <img src="https://www.yha.org.uk/sites/default/files/uploads/Places%20to%20Stay/Manchester/manchester.jpg">
+      <a href="#">Learn more</a>
+    </div>
+    <div class="effect10">
+      <img src="https://s3-eu-west-1.amazonaws.com/prez-shared-data/Images/7160.jpg">
+      <a href="#">Old Trafford</a>
+    </div>
+    <div class="effect11">
+      <img src="https://pbs.twimg.com/profile_images/842531341698662400/zA3PfNl0_400x400.jpg">
+      <a href="#">Stade Louis II</a>
+    </div>
+      <div class="effect12">
+      <img src="https://s-media-cache-ak0.pinimg.com/736x/ef/5a/24/ef5a243228570d53d7e5dea9aa3c1dc3.jpg">
+      <a href="#">Camp Nou</a>
+    </div>
+  </div>
+</body>
+</html>
